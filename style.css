@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+     
+}
+html, body{
+    height: 100%;
+     background:
+    linear-gradient(135deg, #78717a, #aa9b66ee, #480257);
+    overflow : hidden;
+}
+#container{
+    
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow:hidden;
+    
+}
+#characterscontainer{
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+    margin: 2rem 0;
+    
+}
+.characters {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 128, 28, 0.167);
+    cursor: pointer;
+    
+}
+#rock, #paper, #scissors{
+    display: flex;
+    flex-direction: column;
+}
+.characters img{
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.2s;
+    max-width: 75px;
+    max-height: 75px;
+}
+.characters:hover img{
+    transform: scale(1.1);
+}
+#name{
+    font-size: 1.2rem;
+}
+#results{
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 235, 205, 0.174);
+    width: 90%;
+    height:fit-content;
+    justify-content: space-around;
+    padding: 1%;
+    flex-wrap: nowrap;
+    
+    
+    
+}
+#playerlabel{
+    display: flex;
+}
+#computerlabel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+#results label{
+    padding-right:3%;
+}
+#playerscore{
+    display: flex;
+}
+#computerscore{
+    display: flex;
+}
+#scoreboard label{
+    padding-right: 3%;
+}
+
+#scoreboard {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 235, 205, 0.174);
+    width: 70vw;
+    padding: 1%;
+
+}
+#reset{
+    margin-top: 5%;
+    padding: 1% 6%;
+    border-radius: 30px;
+    background-color: #a38fb5;
+    
+}
+#winner{
+    height: 1.8rem;
+    font-weight: bold;
+    
+}
+.computerwins{
+    color: black
+}
+.playerwins{
+    color:cornsilk ;
+    font-size:1.5rem ;
+}
