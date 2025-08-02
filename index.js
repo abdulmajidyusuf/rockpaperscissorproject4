@@ -34,31 +34,31 @@ function computerPick () {
     
             }
 
-characters[0].addEventListener("click", function(callback){
+characters[0].addEventListener("click", function(){
         
       playerChoiceDisplay.textContent = " rock"
         playerChoice = "rock"
        setTimeout(function() {computerPick();
-        callback(getWinner())}, 700)
+        getWinner()}, 700)
         
 }
     );
 
-characters[1].addEventListener("click", function (callback){
+characters[1].addEventListener("click", function (){
 
     playerChoiceDisplay.textContent = "paper"
     playerChoice = "paper"
     setTimeout(function() {computerPick()
-        callback(getWinner())}, 500)
+        getWinner()}, 500)
 }
     );    
      
-characters[2].addEventListener("click", function (callback){
+characters[2].addEventListener("click", function (){
 
     playerChoiceDisplay.textContent = " scissors"
     playerChoice = "scissors"
     setTimeout(function() {computerPick()
-        callback(getWinner())}, 500)
+        getWinner()}, 500)
     
 }
     );   
@@ -128,4 +128,5 @@ characters[2].addEventListener("click", function (callback){
         winner.textContent = "";
 
     }
+
     resetButton.addEventListener("click", resetFnctn)
